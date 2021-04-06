@@ -1,7 +1,7 @@
 package fr.esiea.ex4A;
 
 
-import fr.esiea.ex4A.Agify.AgifyClient;
+import fr.esiea.ex4A.agify.AgifyClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -21,7 +21,6 @@ public class Launcher {
         .baseUrl("https://api.agify.io/")
         .addConverterFactory(JacksonConverterFactory.create())
         .build();
-
         return retrofit.create(AgifyClient.class);
     }
 }

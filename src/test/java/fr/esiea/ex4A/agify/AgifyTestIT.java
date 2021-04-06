@@ -1,4 +1,4 @@
-package fr.esiea.ex4A.Agify;
+package fr.esiea.ex4A.agify;
 
 class AgifyTestIT {
 
